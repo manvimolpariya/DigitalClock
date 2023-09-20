@@ -1,0 +1,289 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: #111;
+    height: 100%;
+}
+.wrapper span{
+    position: fixed;
+    bottom: -180px;
+    height: 50px;
+    width: 50px;
+    z-index: -1;
+    background-color: #18191f;
+    box-shadow: 0 0 50px #0072ff,
+                0 0 100px #0072ff,
+                0 0 150px #0072ff,
+                0 0 200px #0072ff;
+    animation: animate 10s linear infinite;
+}
+.wrapper span:nth-child(1){
+    left:60px;
+    animation-delay: 0.6s;
+}
+.wrapper span:nth-child(2){
+    left:10%;
+    animation-delay: 3s;
+    width: 60px;
+    height: 60px;
+}
+.wrapper span:nth-child(3){
+    left:20%;
+    animation-delay: 2s;
+}
+.wrapper span:nth-child(4){
+    left:30%;
+    animation-delay: 5s;
+    height: 80px;
+    width: 80px;
+}
+.wrapper span:nth-child(5){
+    left:40%;
+    animation-delay: 1s;
+}
+.wrapper span:nth-child(6){
+    left:50%;
+    animation-delay: 7s;
+}
+.wrapper span:nth-child(7){
+    left:60%;
+    animation-delay: 6s;
+    height: 100px;
+    width: 100px;
+}
+.wrapper span:nth-child(8){
+    left:70%;
+    animation-delay: 8s;
+}
+.wrapper span:nth-child(9){
+    left:80%;
+    animation-delay: 6s;
+    height: 90px;
+    width: 90px;
+}
+.wrapper span:nth-child(10){
+    left:90%;
+    animation-delay: 4s;
+}
+@keyframes animate{
+    0%{
+       transform: translateY(0);
+        opacity: 1;
+    }
+    80%{
+       opacity: .7;
+    }
+    100%{
+        transform: translateY(-800px) rotate(360deg);
+        opacity: 0;
+    }
+}
+.banner{
+    height: 100%;
+    width: 100%;
+    display: flex; 
+    align-items: center;
+    justify-content:center;
+    flex-wrap: wrap;
+    gap: 30px;
+   margin-top: 5%;
+}
+.time{
+    border-radius: 5px;
+    box-shadow: rgba(86, 83, 83, 0.6) 5px 5px 15px;
+    width: 200px;
+    height:200px;
+    border: 2px solid  rgb(90, 125, 2);
+    justify-content: center;
+    align-items: center;
+   
+}
+.time h2{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 50px;
+    color: beige;
+}
+.time p
+{   margin-top: 30px;
+    text-align: center;
+    font-size: 23px;
+    color: beige;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.time1{
+   
+    border-radius: 5px;
+    box-shadow: rgba(86, 83, 83, 0.6) 5px 5px 15px;
+    width: 200px;
+    height:200px;
+    border: 2px solid  rgb(90, 125, 2);
+    justify-content: center;
+    align-items: center;
+}
+.time1 h2{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 50px;
+    color: beige;
+}
+.time1 p
+{   margin-top: 30px;
+    text-align: center;
+    font-size: 23px;
+    color: beige;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.time2{
+   
+    border-radius: 5px;
+    box-shadow: rgba(86, 83, 83, 0.6) 5px 5px 15px;
+    width: 200px;
+    height:200px;
+    border: 2px solid   rgb(90, 125, 2);
+    justify-content: center;
+    align-items: center;
+}
+.time2 h2
+{   margin-top: 50px;
+    text-align: center;
+    font-size: 50px;
+    color: beige;
+}
+.time2 p
+{   margin-top: 30px;
+    text-align: center;
+    font-size: 23px;
+    color: beige;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.time3{
+    
+    border-radius: 5px;
+    box-shadow: rgba(86, 83, 83, 0.6) 5px 5px 15px;
+    width: 200px;
+    height:200px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid  rgb(90, 125, 2);
+    color: beige;
+}
+.time3 h2{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.heading{
+    color: whitesmoke;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 5%;
+    font-size: 40px;
+}
+#days{
+    color:white;
+    font-size: 26px;
+    margin-top: 5%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;;
+}
+@media(max-width:450px) {
+    .banner{
+        height: 100%;
+        width: 100%;
+        display:flex; 
+        align-items: center;
+        justify-content:center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+    .time{
+       
+        border-radius: 5px;
+        box-shadow: rgba(86, 83, 83, 0.6) 5px 5px 15px;
+        width: 120px;
+        height:120px;
+        border: 1px solid black;
+        border: 2px solid rgb(90, 125, 2);
+    }
+    .time h2{
+        margin-top: 10px;
+        text-align: center;
+        font-size: 50px;
+        color: beige;
+    }
+    .time p
+    {   margin-top: 10px;
+        text-align: center;
+        font-size: 23px;
+        color: beige;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .time1{
+       
+        border-radius: 5px;
+        box-shadow: rgba(86, 83, 83, 0.6) 5px 5px 15px;
+        width: 120px;
+        height:120px;
+        border: 1px solid black;
+        border: 2px solid rgb(90, 125, 2);
+    }
+    .time1 h2{
+        margin-top: 10px;
+        text-align: center;
+        font-size: 50px;
+        color: beige;
+    }
+    .time1 p
+    {   margin-top: 10px;
+        text-align: center;
+        font-size: 23px;
+        color: beige;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .time2{
+       
+        border-radius: 5px;
+        box-shadow: rgba(86, 83, 83, 0.6) 5px 5px 15px;
+        width: 120px;
+        height:120px;
+        border: 1px solid black;
+        border: 2px solid rgb(90, 125, 2);
+    }
+    .time2 h2
+{   margin-top: 10px;
+    text-align: center;
+    font-size: 50px;
+    color: beige;
+}
+.time2 p
+{   margin-top: 10px;
+    text-align: center;
+    font-size: 23px;
+    color: beige;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+    .time3{
+      
+        border-radius: 5px;
+        box-shadow: rgba(86, 83, 83, 0.6) 5px 5px 15px;
+        width: 120px;
+        height:120px;
+        border: 2px solid rgb(90, 125, 2);
+        background-color:transparent;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        color: beige;
+    }
+    .heading{
+        color: whitesmoke;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 5%;
+    }
+};
